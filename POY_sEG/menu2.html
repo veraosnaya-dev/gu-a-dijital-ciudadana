@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 --> 
+<script src="lr.js"></script>
+<html lang="es"> <!-- Documento en español -->
+<head>
+<meta charset="UTF-8"> <!-- Codificación de caracteres (acentos, ñ, etc.) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el diseño a móviles -->
+<title>TRAMITES</title> <!-- Título que aparece en la pestaña -->
+<style>
+body {
+
+ margin: 0; /* Elimina márgenes por defecto */ 
+font-family: Arial, sans-serif; /* Fuente del texto */
+}
+/* ---- ESTILO DEL MENÚ PRINCIPAL ----*/
+nav {
+  background: #FFFFFF;
+}
+nav ul {
+  List-style: none; /* Quita viñetas de la lista */ 
+  margin: 0;        /*Eliminar margenes */
+  padding: 0;      /* Elimina relleno */
+  display: flex;   /* Coloca los ‹li> en línea (horizontal) */
+}
+nav ul li {
+  position: relative; /* Necesario para posicionar el submenú debajo */
+}
+nav ul li a {
+  display: block;          /* Hace que todo el área sea clickeable */
+  padding: 15px 20px;      /* Espaciado interno */
+  color: black;            /* Texto blanco */
+  text-decoration: none;   /* Quita el subrayado */
+}
+nav ul li a:hover {
+  background: #8e51ff; /* Cambia el fondo al pasar el ratón */
+}
+
+    /* ---ESTILO DEL SUBMENÚ --- */
+    nav ul li ul{
+      display: none;       /* Ocultar el submenu por defecto */
+      position: absolute;  /* Posiciona el submenú relativo al padre */
+      top: 100%;           /* Lo coloca justo debajo del elemento padre */
+      left: 0;             /* Alineado a la izquierda */
+      background: #444;    /* Fondo del submenú */
+      padding: 0;          /* Sin espacio intefrno */
+      min_width: 180px;        /* Ancho minimo del submenú */
+    }
+    nav ul li ul li a {
+      padding: 10px 15px;  /* Espaciado interno en las opciones */
+    }
+    nav ul li ul li a:hover {
+      background: : #555;   /* Color mas claro al pasar el ratón */
+    }
+
+    /* ---MOSTRAR EL SUNMENÚ--- */
+    nav ul li:hover > ul {
+      display: block; /* Cuando paso el ratón sobre el <li>, muestra el submenú */
+      }
+   </style>
+  </head>
+
+  <body background="tram7.png">
+    <!-- MENÚ PRICIPAL -->
+   <nav>
+     <ul>
+      <!-- ELEMENTO SIMPLE SIN SUBMENÚ -->
+        <li><a href="CIUDADANO.HTML">ACTA DE NACIMIENTO</a>
+           <ul>
+            <li><a href="">FOLIO DE SEGUIMIENTO</a></li>
+            <li><a href="">INFORMACION QUE NECESITAS</a></li>
+            <li><a href="ACTA_NAC.html">INFORMACION DE ACTA </a></li>
+
+            
+        </ul>
+
+        <li>
+          <a href="TRAMITE.HTML">CURP</a> <!-- Flecha indicando submenú -->
+          <ul>
+            <li><a href="tramitess.HTML">INFORMACIN QUE NECESITAS</a></li>
+        </ul>
+      </li>
+
+         <!-- Elemento con su submenu -->
+           <li><a href="SOLICITUD.HTML">LICENCIA DE CONDUCIR</a>
+<ul>
+            <li><a href="">AGENDAR CITAS</a></li>
+            <li><a href="">INFORMACION QUE NECESITAS</a></li>
+
+        </ul>
+          
+        <li>
+          <a href="PAGO.HTML">SAT</a> <!-- Flecha indicando submenú -->
+         <ul>
+            <li><a href="">AGENDAR CITAS</a></li>
+            <li><a href="">RFC</a></li>
+            <li><a href="">CONSTANCIA DE SITUACION FISCAL</a></li>
+            <li><a href="">DECLARACION DE PERSONAS FISICAS</a></li>
+            <li><a href="">INFORMACION QUE NECESITAS</a></li>
+
+        </ul>
+      </li>
+        <!-- Elemento con su submenu -->
+        <li>
+          <a href="DOCUMENTO.HTML">REGISTRO CIVIL</a> <!-- Flecha indicando submenú -->
+          <ul>
+            <li><a href="">INFORMACION QUE NECESITAS</a></li>
+        </ul>
+      </li>
+      <!-- Elemento con su submenu -->
+        <li>
+          <a href="#">PASAPORTE</a>
+          <ul>
+            <li><a href="">INFORMACION QUE NECESITAS</a></li>
+        </ul>
+      </li>
+     
+       
+      <li>
+
+       <form action="https://www.google.com/search" method="get" target="_blank">
+  <input type="text" name="q" placeholder="Buscar en Google">
+  <input type="submit" value="Buscar">
+</form>
+
+     </nav>
+   </form>
+   </body>
+ </html>
+
